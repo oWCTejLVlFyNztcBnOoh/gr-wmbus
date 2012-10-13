@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='ASCII'?>
+<block>
+  <name>Wmbus Phy2</name>
+  <key>wmbus_phy2</key>
+  <category>Custom</category>
+  <import>execfile("/home/user/.grc_gnuradio/wmbus_phy2.py")</import>
+  <make>wmbus_phy2()</make>
+  <doc>
+
+/home/user/.grc_gnuradio/wmbus_phy2.py</doc>
+</block>

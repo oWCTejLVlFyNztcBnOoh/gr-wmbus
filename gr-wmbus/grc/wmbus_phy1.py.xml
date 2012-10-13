@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='ASCII'?>
+<block>
+  <name>Wmbus Phy1</name>
+  <key>wmbus_phy1</key>
+  <category>Custom</category>
+  <import>execfile("/home/user/.grc_gnuradio/wmbus_phy1.py")</import>
+  <make>wmbus_phy1(
+	samp_rate=$samp_rate,
+	samp_per_sym=$samp_per_sym,
+	verbose=$verbose,
+	msgq=$msgq,
+	freq_error=$freq_error,
+)</make>
+  <callback>set_samp_rate($samp_rate)</callback>
+  <callback>set_samp_per_sym($samp_per_sym)</callback>
+  <callback>set_verbose($verbose)</callback>
+  <callback>set_msgq($msgq)</callback>
+  <callback>set_freq_error($freq_error)</callback>
+  <param>
+    <name>samp_rate</name>
+    <key>samp_rate</key>
+    <value>1600000</value>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>samp_per_sym</name>
+    <key>samp_per_sym</key>
+    <value>16</value>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>verbose</name>
+    <key>verbose</key>
+    <value>0</value>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>msgq</name>
+    <key>msgq</key>
+    <value>0</value>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>freq_error</name>
+    <key>freq_error</key>
+    <value>-0.0025000</value>
+    <type>raw</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>1</vlen>
+  </sink>
+  <doc>
+
+/home/user/.grc_gnuradio/wmbus_phy1.py</doc>
+</block>

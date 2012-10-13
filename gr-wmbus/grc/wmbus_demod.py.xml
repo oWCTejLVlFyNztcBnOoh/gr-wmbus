@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='ASCII'?>
+<block>
+  <name>Wireless M-Bus Demod</name>
+  <key>wmbus_demod</key>
+  <category>Custom</category>
+  <import>execfile("/home/user/.grc_gnuradio/wmbus_demod.py")</import>
+  <make>wmbus_demod(
+	samp_rate=$samp_rate,
+	samp_per_sym=$samp_per_sym,
+	freq_error=$freq_error,
+)</make>
+  <callback>set_samp_rate($samp_rate)</callback>
+  <callback>set_samp_per_sym($samp_per_sym)</callback>
+  <callback>set_freq_error($freq_error)</callback>
+  <param>
+    <name>samp_rate</name>
+    <key>samp_rate</key>
+    <value>1600000</value>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>samp_per_sym</name>
+    <key>samp_per_sym</key>
+    <value>16</value>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>freq_error</name>
+    <key>freq_error</key>
+    <value>-0.0025000</value>
+    <type>raw</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>1</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+    <vlen>1</vlen>
+  </source>
+  <doc>
+
+/home/user/.grc_gnuradio/wmbus_demod.py</doc>
+</block>
